@@ -12,6 +12,9 @@ body {
 a {
   text-decoration: none;
 }
+ul {
+  list-style: none;
+}
 
 /*---------------header---------------*/
 
@@ -94,7 +97,7 @@ section::before {
   position: absolute;
   color: #fffffc;
   white-space: nowrap;
-  right: -200px;
+  right: -300px;
   font-size: 7.5vw;
   font-family: "Poppins", sans-serif;
   z-index: 1;
@@ -124,4 +127,74 @@ section::before {
 .about__p {
   font-family: "Poppins", sans-serif;
   font-size: 1em;
+}
+
+/*---------------footer contact---------------*/
+.footer {
+  background-color: #230e33;
+  padding: 70px 0;
+}
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+.footer__row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer__column {
+  width: 25%;
+  padding: 0 15px;
+}
+.column-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  position: relative;
+  font-weight: 700;
+  text-decoration: none;
+}
+.column-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #6b72ba;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+li {
+  margin-bottom: 10px;
+}
+.column__ul__li--a {
+  font-size: 16px;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.column__ul__li--a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer__column .contact-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
 }
