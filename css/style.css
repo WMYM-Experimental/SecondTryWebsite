@@ -131,7 +131,6 @@ section::before {
 }
 
 /*---------------footer contact---------------*/
-
 .footer {
   background-color: #230e33;
   padding: 70px 0;
@@ -200,7 +199,7 @@ li {
   color: #24262b;
   background-color: #ffffff;
 }
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
 }
-@media screen and (max-height: 590px) {
+@media (max-height: 590px) {
 }
